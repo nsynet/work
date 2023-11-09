@@ -1,0 +1,75 @@
+s/MPU_VERSION/~!@  MPU_VERSION/g
+s/Linux version 4.14/~!@  Linux version 4.14/g
+s/small than grab window_w\:0\_10240/~!@#  small than grab window_w\:0\_10240/g
+s/\[ISP\]\[ISP_WaitIrq\] ERRRR/~!@#  \[ISP\]\[ISP_WaitIrq\] ERRRR/g
+s/max96722_mipi_yuv_camera_sensor\[Chenck_Sensor_Signal\] Sensor Status/~!@  max96722_mipi_yuv_camera_sensor\[Chenck_Sensor_Signal\] Sensor Status/g
+s/max96722_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/~!@#  max96722_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/g
+s/max96722_mipi_yuv_camera_sensor\[write_cmos_sensor/~!@#  max96722_mipi_yuv_camera_sensor\[write_cmos_sensor/g
+s/max96722_mipi_yuv_camera_sensor\[read_cmos_sensor/~!@#  max96722_mipi_yuv_camera_sensor\[read_cmos_sensor/g
+s/max96722_mipi_yuv_camera_sensor\[write_cmos_max/~!@#  max96722_mipi_yuv_camera_sensor\[write_cmos_max/g
+s/----- beginning of kernel/\n\n\n  ~!@#----- beginning of kernelkernel/g
+s/------ beginning of system/\n\n\n  ~!@#------ beginning of system/g
+s/------ beginning of main/\n\n\n  ~!@#------ beginning of main/g
+s/--MAX96722--beging/~!@  --MAX96722--beging/g
+s/camera ID=0x/~!@  camera ID=0x/g
+s/--MAX96722--end/~!@#  --MAX96722--end/g
+s/cam_avm_lock_satus =/~!@#  cam_avm_lock_satus =/g
+s/cam_avm_err_satus/~!@#  cam_avm_err_satus/g
+s/cam_avm_status is local_status/~!@  cam_avm_status is local_status/g
+s/WANR\:0x400 register = 0x/~!@  WANR\:0x400 register = 0x/g
+s/serializer id\=0x/~!@  serializer id\=0x/g
+s/LiteCameraDevice\: deque fail/~!@# LiteCameraDevice\: deque fail/g
+s/LD01 off/~!@  LD01 off/g
+s/LD02 off/~!@  LD02 off/g
+s/LD01 on/~!@  LD01 on/g
+s/LD02 on/~!@  LD02 on/g
+s/max96722_mipi_yuv_camera_sensor\[open\] sensor_init/~!@#  max96722_mipi_yuv_camera_sensor\[open\] sensor_init/g
+s/max96722_mipi_yuv_camera_sensor\[open\] open/~!@#  max96722_mipi_yuv_camera_sensor\[open\] open/g
+s/max96722_mipi_yuv_camera_sensor\[close\]/~!@#  max96722_mipi_yuv_camera_sensor\[close\]/g
+s/Kernel command line/~!@  Kernel command line/g
+s/open  cameraLinkStatus failed/~!@#  open  cameraLinkStatus failed/g
+s/open  Errbnode failed/~!@#  open  Errbnode failed/g
+s/shm_read error, errno/~!@#   shm_read error, errno/g
+s/CamCon CheckCam failed/~!@#  CamCon CheckCam failed/g
+#s/tempStates \:/~!@#tempStates \:/g
+s/mErrbstatus \: 0/~!@#  mErrbstatus \: 0/g
+#s/MTKThreadStatus \:/~!@#  MTKThreadStatus \:/g
+s/open CameraStatus/~!@#  open CameraStatus/g
+s/libavm  \: DF camstatus/~!@#  (camstatus=1=work,powerstate=1=sleep)  libavm  \: DF camstatus/g
+s/Lite DF stoping start/~!@#(suspend)  Lite DF stoping start/g
+s/Lite DF resume starting/~!@#(resume) Lite DF resume starting/g
+s/sensor_idx 0, ppw/~!@  sensor_idx 0, ppw/g
+s/LiteCameraDevice\: enqThreadLoop\-\-/~!@   LiteCameraDevice\: enqThreadLoop\-\-/g
+s/15000 SENINF0_PkCnt/~!@  15000 SENINF0_PkCnt/g
+s/cam_start_monitor uevent/~!@#  cam_start_monitor uevent/g
+s/cam_stop_monitor uevent/~!@#  cam_stop_monitor uevent/g
+s/Cam\:\:0\] deque fps/~!@  Cam\:\:0\] deque fps/g
+s/PM\: suspend exit/内核日志中的modem唤醒  ~!@# PM\: suspend exit/g
+s/PM\: suspend entry/内核日志中的modem休眠  ~!@#  PM\: suspend entry/g
+s/df_display_log set desav backlight is disabled \= 1 1/df_display_log set desav backlight is disabled \= 1 1  ~!@#   唤醒/g
+s/df_display_log\: mtk_drm_suspend_release_present_fence release fence failed/df_display_log\: mtk_drm_suspend_release_present_fence release fence failed   ~!@# 每次执行休眠时会进行打印，正常休眠完成仅打印一次/g
+s/CAR\.POWER\: onWakeUp/CAR\.POWER\: onWakeUp  ~!@#/g
+s/Notify car\.power sleep\./Notify car\.power sleep\.  ~!@#/g
+s/\:SENSOR_FEATURE_OPEN\,sensor id\=0/\:SENSOR_FEATURE_OPEN\,sensor id\=0  ~!@# /g
+s/\:SENSOR_FEATURE_CLOSE\,sensor id\=0/\:SENSOR_FEATURE_CLOSE\,sensor id\=0  ~!@# /g
+s/needUpdate \: 1/needUpdate \: 1  ~!@#/g
+s/enter avm/enter avm ~!@/g
+s/Call trace\:/Call trace\:  ~!@/g
+s/cut here/cut here  ~!@/g
+s/nisy/nisy  ~!@#/g
+s/AVM link status changed/~!@# AVM link status changed/g
+s/No free MUX for CAM/~!@#  No free MUX for CAM/g
+s/\: shutdown/\: shutdown  ~!@#/g
+s/MAX96722\:/~!@#  MAX96722\:/g
+s/I2C read failed bus\=camera_main/~!@  I2C read failed bus\=camera_main/g
+s/I2C write failed bus\=camera_main/~!@ I2C write failed bus\=camera_main/g
+s/WARN\:Check I2C\-8/~!@#WARN\:Check I2C\-8/g
+s/0x1A ERRB status changed/~!@#  0x1A ERRB status changed/g
+s/AVM report uevent/~!@#  AVM report uevent/g
+s/Camera 0\: notifyError\: Camera HAL reported serious device error/Camera 0\: notifyError\: Camera HAL reported serious device error  ~!@#/g
+s/gearState\=/gearState\=/g
+s/onVersionReceived version/~!@#  nisy\:编译的分支\:onVersionReceived version/g
+s/deque fail/~!@#  deque fail/g
+s/Check_Max96722_video_lock/~!@#  Check_Max96722_video_lock/g
+s/Check_Max96722_ERRB_Status/~!@#  Check_Max96722_ERRB_Status/g
+s/bus tied low/~!@# bus tied low/g

@@ -1,0 +1,629 @@
+Version 2.2
+	 file_start 	
+nxp max9286_~!@
+E:\_temp\1107\4-我的台架log (*)
+1
+*
+
+1
+E:\_temp\1107\4-我的台架log
+1
+1
+E:\_temp\1107\4-我的台架log
+1
+0
+
+0
+0
+E:\_temp\1107\4-我的台架log
+0
+
+	 begin_group_backup 	
+	 group_start 	
+_system_~~~
+{}sAndroidRuntime: Process
+nisy:疑似部分模块crash，被重新拉起  ~~~  AndroidRuntime: Process
+{}sUnable to start service Intent
+nisy:启动部分不存在的服务 ~~~  Unable to start service Intent
+
+
+	 group_start 	
+mtk 4合1_camera
+{}ssmall than grab window
+small than ~!@  grab window
+{}s[ISP][ISP_WaitIrq] ERRRR
+~!@  [ISP][ISP_WaitIrq] ERRRR
+{}smax96722_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+max96722_mipi_yuv_camera_sensor[streaming_control] ~!@ streaming_enable
+{}smax96722_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722_mipi_yuv_camera_sensor[write_cmos_max
+{}s----- beginning of kernel
+----- beginning of kernel  ~!@
+{}s------ beginning of system
+------ beginning of system  ~!@
+{}s------ beginning of main
+------ beginning of main  ~!@
+{}s--MAX96722--beging
+--MAX96722--beging  ~!@
+{}scamera ID=0x
+camera ID ~!@  =0x
+{}s--MAX96722--end
+~!@  --MAX96722--end
+{}scam_avm_status is local_status =
+~!@  cam_avm_status is local_status =
+{}scam_avm_lock_satus =
+~!@  cam_avm_lock_satus =
+{}sWANR:0x400 register = 0x
+~!@  WANR:0x400 register = 0x
+{}sserializer id=0x
+~!@  serializer id=0x
+
+
+	 group_start 	
+mtk a0123_camera
+{}ssmall than grab window
+small than ~!@  grab window
+{}s[ISP][ISP_WaitIrq] ERRRR
+~!@  [ISP][ISP_WaitIrq] ERRRR
+{}smax96722a0_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722a0_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722a1_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722a1_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722a2_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722a2_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722a3_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722a3_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722a0_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722a0_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722a1_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722a1_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722a2_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722a2_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722a3_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722a3_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722a0_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722a0_mipi_yuv_camera_sensor[write_cmos_max
+{}smax96722a1_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722a1_mipi_yuv_camera_sensor[write_cmos_max
+{}smax96722a2_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722a2_mipi_yuv_camera_sensor[write_cmos_max
+{}smax96722a3_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722a3_mipi_yuv_camera_sensor[write_cmos_max
+{}s----- beginning of kernel
+----- beginning of kernel  ~!@
+{}s------ beginning of system
+------ beginning of system  ~!@
+{}s------ beginning of main
+------ beginning of main  ~!@
+{}s--MAX96722A0--beging
+--MAX96722A0--beging  ~!@
+{}s--MAX96722A1--beging
+--MAX96722A1--beging  ~!@
+{}s--MAX96722A2--beging
+--MAX96722A2--beging  ~!@
+{}s--MAX96722A3--beging
+--MAX96722A3--beging  ~!@
+{}scamera ID=0x
+camera ID ~!@  =0x
+{}s--MAX96722A0--end
+~!@  --MAX96722A0--end
+{}snisy
+nisy ~!@
+{}s--MAX96722A1--end
+~!@  --MAX96722A1--end
+{}s--MAX96722A2--end
+~!@ --MAX96722A2--end
+{}s--MAX96722A3--end
+~!@ --MAX96722A3--end
+{}smipi_yuv_camera_sensor[open] open
+mipi_yuv_camera_sensor[open] open  ~!@
+{}s[max96722A_wait_link_OK_] 
+[max96722A_wait_link_OK_]   ~!@
+{}saddr:0x8
+addr: ~!@ 0x8
+{}s[imgsensor]Open bridge error
+~!@  [imgsensor]Open bridge error
+{}smax96722a2_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@  max96722a2_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}smax96722a1_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@  max96722a1_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}smax96722a0_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@ max96722a0_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}smax96722a3_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@  max96722a3_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}s---[ end trace
+~!@  ---[ end trace
+{}s------------[ cut here ]------------
+~!@  ------------[ cut here ]------------
+{}smax96722a0_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722a0_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722a1_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722a1_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722a2_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722a2_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722a3_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722a3_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722a0_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722a0_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722a1_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722a1_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722a2_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722a2_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722a3_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722a3_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722a0_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722a0_mipi_yuv_camera_sensor[read_cmos_sensor
+{}smax96722a1_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722a1_mipi_yuv_camera_sensor[read_cmos_sensor
+{}smax96722a2_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722a2_mipi_yuv_camera_sensor[read_cmos_sensor
+{}smax96722a3_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722a3_mipi_yuv_camera_sensor[read_cmos_sensor
+	 group_start 	
+mtk b0123_camera
+{}ssmall than grab window
+small than ~!@  grab window
+{}s[ISP][ISP_WaitIrq] ERRRR
+~!@  [ISP][ISP_WaitIrq] ERRRR
+{}smax96722b0_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722b0_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722b1_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722b1_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722b2_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722b2_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722b3_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+~!@  max96722b3_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
+{}smax96722b0_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722b0_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722b1_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722b1_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722b2_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722b2_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722b3_mipi_yuv_camera_sensor[write_cmos_sensor
+~!@  max96722b3_mipi_yuv_camera_sensor[write_cmos_sensor
+{}smax96722b0_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722b0_mipi_yuv_camera_sensor[write_cmos_max
+{}smax96722b1_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722b1_mipi_yuv_camera_sensor[write_cmos_max
+{}smax96722b2_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722b2_mipi_yuv_camera_sensor[write_cmos_max
+{}smax96722b3_mipi_yuv_camera_sensor[write_cmos_max
+~!@  max96722b3_mipi_yuv_camera_sensor[write_cmos_max
+{}s----- beginning of kernel
+----- beginning of kernel  ~!@
+{}s------ beginning of system
+------ beginning of system  ~!@
+{}s------ beginning of main
+------ beginning of main  ~!@
+{}s--MAX96722B0--beging
+--MAX96722B0--beging  ~!@
+{}s--MAX96722B1--beging
+--MAX96722B1--beging  ~!@
+{}s--MAX96722B2--beging
+--MAX96722B2--beging  ~!@
+{}s--MAX96722B3--beging
+--MAX96722B3--beging  ~!@
+{}scamera ID=0x
+camera ID ~!@  =0x
+{}s--MAX96722B0--end
+~!@  --MAX96722B0--end
+{}s--MAX96722B1--end
+~!@  --MAX96722B1--end
+{}s--MAX96722B2--end
+~!@ --MAX96722B2--end
+{}s--MAX96722B3--end
+~!@ --MAX96722B3--end
+{}s[max96722B_wait_link_OK_] 
+[max96722B_wait_link_OK_]   ~!@
+{}s[imgsensor]Open bridge error
+~!@  [imgsensor]Open bridge error
+{}smax96722b2_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@  max96722b2_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}smax96722b1_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@  max96722b1_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}smax96722b0_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@ max96722b0_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}smax96722b3_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+~!@  max96722b3_mipi_yuv_camera_sensor[get_imgsensor_id] Sensor Not Connect
+{}s---[ end trace
+~!@  ---[ end trace
+{}s------------[ cut here ]------------
+~!@  ------------[ cut here ]------------
+{}smax96722b0_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722b0_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722b1_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722b1_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722b2_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722b2_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722b3_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+~!@ max96722b3_mipi_yuv_camera_sensor[read_cmos_max9670x_sensor
+{}smax96722b0_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722b0_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722b1_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722b1_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722b2_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722b2_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722b3_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+~!@ max96722b3_mipi_yuv_camera_sensor[streaming_control] streaming_enable
+{}smax96722b0_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722b0_mipi_yuv_camera_sensor[read_cmos_sensor
+{}smax96722b1_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722b1_mipi_yuv_camera_sensor[read_cmos_sensor
+{}smax96722b2_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722b2_mipi_yuv_camera_sensor[read_cmos_sensor
+{}smax96722b3_mipi_yuv_camera_sensor[read_cmos_sensor
+~!@ max96722b3_mipi_yuv_camera_sensor[read_cmos_sensor
+{}sstartActivityFromPkgName: com.senseauto.camera
+~!@  startActivityFromPkgName: com.senseauto.camera
+{}sDFFactoryPattern: TextureViewHelper
+~!@  DFFactoryPattern: TextureViewHelper
+{}sCreating new stream
+~!@  Creating new stream
+{}sreport OMS
+~!@  report OMS
+{}sreport DMS
+~!@  report DMS
+{}sFATAL EXCEPTION
+~!@  FATAL EXCEPTION
+
+
+	 group_start 	
+mtk yocto
+{}sJumping into linux ...
+~!@  Jumping into linux ...
+
+
+	 group_start 	
+nxp G59 E3 DS90UB940
+
+
+{}sis linked, others is not link
+is linked, others is not link  !!!
+{}sds90ub940_reset_show
+ds90ub940_reset_show   !!!
+{}sds90ub940_reset_store
+ds90ub940_reset_store  !!!
+{}s--------- beginning of main
+{}e#@!~  --------- beginning of main
+{}sCamera Status from
+#@!~  Camera Status from
+{}s--------- beginning of system
+{}e#@!~   --------- beginning of system
+{}sCameraService: 
+@!~   CameraService: 
+{}s---------- beginning of crash
+{}e#@!~    ---------- beginning of crash
+{}sboard_type=0x
+@!~    board_type=0x
+{}sinit: Reboot start
+#@!~   init: Reboot start
+{}sFslCameraHAL: openDev:0: Opening camera device
+@!~  FslCameraHAL: openDev:0: Opening camera device  //OMS camera
+{}sShutdown timeout
+#@!~  Shutdown timeout
+{}sActivityManager: Reason:
+@!~  ActivityManager: Reason:
+{}s nisy
+@!~   nisy
+{}sCamera2-Parameters
+@!~  Camera2-Parameters
+{}sLinux version 4.14.98
+#@!~  Linux version 4.14.98
+{}sFslCameraHAL: closeDev
+@!~  FslCameraHAL: closeDev
+{}sFslCameraHAL: openDev:1: Opening camera device
+#@!~  FslCameraHAL: openDev:1: Opening camera device   //AR camera
+{}sGearState=
+@!~  GearState=
+{}s[TaskQueue][postTask]add task [EXIT] to queue
+@!~  [TaskQueue][postTask]add task [EXIT] to queue
+{}sACC_STATE
+@!~  ACC_STATE
+{}s[TaskQueue][processEnterReverseTask]AVM HD APA Enter
+@!~  [TaskQueue][processEnterReverseTask]AVM HD APA Enter
+{}sRestart Src
+@!~  Restart Src
+{}sboard_type=286335522
+C样 E2 8G @!~  board_type=286335522  
+{}sboard_type=286339891
+@!~ C样 E2 品牌音响8G board_type=286339891
+{}sboard_type=1431642658
+@!~C样 E2 6G  board_type=1431642658
+{}sboard_type=1431651396
+@!~C样 E3 8G(无品牌音响)  board_type=1431651396
+{}sboard_type=286344260
+@!~ C样 E3 8G+品牌音响  board_type=286344260
+{}s***  EVENT STATE DUMP  ***
+***  EVENT STATE DUMP  ***  #@!~
+{}sVideo capture is Blocking
+Video capture is Blocking  #@!~
+{}sG59 E2 init Fail
+#@!~  G59 E2 init Fail
+{}sonFrameAcquireLocked: VIDIOC_DQBUF Failed
+#@!~  onFrameAcquireLocked: VIDIOC_DQBUF Failed
+{}s[ds90ub940.c][ds940_s_stream]
+[ds90ub940.c][ds940_s_stream]  #@!~
+{}s[ds90ub940.c][check_deserializer_id][ds90ub940][8-002c]: Chip ID: _UB940
+[ds90ub940.c][check_deserializer_id][ds90ub940][8-002c]: Chip ID: _UB940  #@!~
+{}sAVM HD APA Enter 
+AVM HD APA Enter @!~  G59 E3进入环视界面
+{}scamera_system_off_on  ++
+#@!~camera_system_off_on  ++
+{}sothers is not link  !!!
+others is not link  !!!  @!~
+{}sReadFrameFps is 
+@!~  ReadFrameFps is 
+
+
+	 group_start 	
+nxp max9286_~!@
+{}s---------- beginning of crash
+{}e~!@#   ---------- beginning of crash
+{}s--------- beginning of main
+{}e~!@#  --------- beginning of main
+{}snisy
+~!@  nisy
+{}sCamera Status from
+~!@  Camera Status from
+{}s--------- beginning of system
+{}e~!@#   --------- beginning of system
+{}s[max9286_reset_store]
+[max9286_reset_store] ~!@ 
+{}s[max9286_probe]: df_camera_log
+~!@  [max9286_probe]: df_camera_log
+{}smax9286_periodic_check_fun]
+max9286_periodic_check_fun] ~!@
+{}sCameraService: 
+~!@   CameraService: 
+{}sboard_type=0x
+~!@   board_type=0x
+{}sinit: Reboot start
+~!@#   init: Reboot start
+{}sShutdown timeout
+~!@#  Shutdown timeout
+{}sActivityManager: Reason:
+~!@  ActivityManager: Reason:
+{}sis not supported
+is not supported  ~!@#
+nisy
+~!@  nisy
+{}sLinux version 4.14.98
+~!@#  Linux version 4.14.98
+{}s***  EVENT STATE DUMP  ***
+***  EVENT STATE DUMP  ***  ~!@#
+{}smax9286 init OK
+max9286 init OK  ~!@
+{}sCall trace:
+~!@  Call trace:
+{}scma alloc
+~!@#  cma alloc
+{}sverify register fail
+~!@#  verify register fail
+{}s0x49 reg =
+~!@#   0x49 reg =
+{}s[max9286_s_stream]
+[max9286_s_stream ~!@]
+{}sRestart Src
+~!@ Restart Src
+{}sKernel command line:
+~!@  Kernel command line:
+{}sboard_type=286335522
+C样 E2 8G ~!@  board_type=286335522  
+{}sboard_type=286339891
+~!@ C样 E2 品牌音响8G board_type=286339891
+{}sboard_type=1431642658
+~!@C样 E2 6G  board_type=1431642658
+{}sboard_type=1431651396
+~!@C样 E3? 8G(无品牌音响)  board_type=1431651396
+{}sboard_type=286344260
+~!@ C样 E3? 8G+品牌音响  board_type=286344260
+{}s[frameFpsPrint]AVM fps
+~!@  [frameFpsPrint]AVM fps
+{}sinit: starting service 'reverse_svc'
+~!@  init: starting service 'reverse_svc'
+{}sread reg error
+~!@#  read reg error
+{}swait for max9286 init Ok...
+~!@  wait for max9286 init Ok...
+{}sCameraStatus changed 
+~!@#  CameraStatus changed 
+{}smax9286_reset_store ++
+max9286_reset_store ++  ~!@#
+{}supdateFrame thread is sleep,restart...
+updateFrame thread is sleep,restart...  ~!@#
+{}sfree_contig_range
+~!@#  free_contig_range
+{}slink status changed
+~!@  link status changed
+{}sERROR:I2C READ ID error
+~!@#  ERROR:I2C READ ID error
+{}sdf_dqbuf
+~!@#  df_dqbuf
+{}sReverse State change to
+~!@#  Reverse State change to
+{}sdf_dqbuf status changed
+~!@#  df_dqbuf status changed
+{}s[max9286_reset_and_init]
+~!@#  [max9286_reset_and_init]
+{}srecoveryd server start
+~!@  应用层编译时间   recoveryd server start
+{}sAVM Get Camera Data fps: 25
+~!@ AVM Get Camera Data good fps: 25
+{}sAVM Get Camera Data fps
+~!@#  AVM Get Camera Data fps
+
+
+	 group_start 	
+nxp max96722_@!~
+{}s--------- beginning of main
+{}e#@!~  --------- beginning of main
+{}sCamera Status from
+#@!~  Camera Status from
+{}s--------- beginning of system
+{}e#@!~   --------- beginning of system
+{}sCameraService: 
+@!~   CameraService: 
+{}smax96722_init_work_fun]
+@!~  max96722_init_work_fun]
+{}smax96722_g_input_status]
+@!~  max96722_g_input_status]
+{}s---------- beginning of crash
+{}e#@!~    ---------- beginning of crash
+{}sboard_type=0x
+@!~    board_type=0x
+{}sinit: Reboot start
+#@!~   init: Reboot start
+{}sFslCameraHAL: openDev:0: Opening camera device
+@!~  FslCameraHAL: openDev:0: Opening camera device  //OMS camera
+{}sShutdown timeout
+#@!~  Shutdown timeout
+{}sActivityManager: Reason:
+@!~  ActivityManager: Reason:
+{}s nisy
+@!~   nisy
+{}sCamera2-Parameters
+@!~  Camera2-Parameters
+{}sLinux version 4.14.98
+#@!~  Linux version 4.14.98
+{}s[9-0029]: reg[0x
+@!~  [9-0029]: reg[0x
+{}sFslCameraHAL: closeDev
+@!~  FslCameraHAL: closeDev
+{}sFslCameraHAL: openDev:1: Opening camera device
+#@!~  FslCameraHAL: openDev:1: Opening camera device   //AR camera
+{}s[max96722_s_stream]: enable
+@!~  [max96722_s_stream]: enable
+{}sGearState=
+@!~  GearState=
+{}s[TaskQueue][postTask]add task [EXIT] to queue
+@!~  [TaskQueue][postTask]add task [EXIT] to queue
+{}sACC_STATE
+@!~  ACC_STATE
+{}s[TaskQueue][processEnterReverseTask]AVM HD APA Enter
+@!~  [TaskQueue][processEnterReverseTask]AVM HD APA Enter
+{}sRestart Src
+@!~  Restart Src
+{}sboard_type=286335522
+C样 E2 8G @!~  board_type=286335522  
+{}sboard_type=286339891
+@!~ C样 E2 品牌音响8G board_type=286339891
+{}sboard_type=1431642658
+@!~C样 E2 6G  board_type=1431642658
+{}sboard_type=1431651396
+@!~C样 E3? 8G(无品牌音响)  board_type=1431651396
+{}sboard_type=286344260
+@!~ C样 E3? 8G+品牌音响  board_type=286344260
+{}s***  EVENT STATE DUMP  ***
+***  EVENT STATE DUMP  ***  #@!~
+{}s[max96722_get_fmt]: which=0x1,pad=5
+[max96722_get_fmt]: which=0x1,pad=5  @!~  5=AR camera
+{}s[max96722_get_fmt]: which=0x1,pad=6
+[max96722_get_fmt]: which=0x1,pad=6  @!~ 6=E3 FAPA camera
+{}s[max96722_get_fmt]: which=0x1,pad=4
+[max96722_get_fmt]: which=0x1,pad=4  @!~  E3 OMS camera
+{}s[max96722.c][i2c_write_reg]: error
+#@!~  [max96722.c][i2c_write_reg]: error
+{}s[max96722.c][i2c_read_reg]: error
+#@!~  [max96722.c][i2c_read_reg]: error
+{}smax96722_periodic_check_fun
+@!~  max96722_periodic_check_fun
+{}smax96722_reset_store ++
+max96722_reset_store ++  #@!~
+{}sVideo capture is Blocking
+Video capture is Blocking  #@!~
+{}sG59 E2 init Fail
+#@!~  G59 E2 init Fail
+{}sonFrameAcquireLocked: VIDIOC_DQBUF Failed
+#@!~  onFrameAcquireLocked: VIDIOC_DQBUF Failed
+{}s[ds90ub940.c][ds940_s_stream]
+[ds90ub940.c][ds940_s_stream]  #@!~
+{}s[ds90ub940.c][check_deserializer_id][ds90ub940][8-002c]: Chip ID: _UB940
+[ds90ub940.c][check_deserializer_id][ds90ub940][8-002c]: Chip ID: _UB940  #@!~
+{}sread reg 0x400 wrong
+#@!~  read reg 0x400 wrong
+{}sAVM HD APA Enter 
+AVM HD APA Enter @!~  G59 E3进入环视界面
+{}scamera_system_off_on  ++
+#@!~camera_system_off_on  ++
+{}sVideo capture is Blocking
+#@!~  Video capture is Blocking
+{}sReadFrameFps is 
+@!~  ReadFrameFps is 
+{}s[8d0]=
+@!~  [8d0]=
+{}s[VideoCapture][open][SIGNAL] camera lock =
+@!~  [VideoCapture][open][SIGNAL] camera lock =
+[onSignalStateChange]
+@!~  [onSignalStateChange]
+{}sSTRESS_TEST:
+@!~  STRESS_TEST:
+{}smax96722_camera_system_off_on
+@!~  max96722_camera_system_off_on
+{}s [max96722.c][i2c_
+ [max96722.c]  @!~  [i2c_
+{}sdls_reverse_svr: [VideoCapture][open]Open video device failed
+#@!~  dls_reverse_svr: [VideoCapture][open]Open video device failed
+{}sdls_reverse_svr: [StateManager][setState] State changed
+#@!~  dls_reverse_svr: [StateManager][setState] State changed
+{}srecoveryd server start
+@!~  应用层编译时间   recoveryd server start
+
+
+	 group_start 	
+nxp thermal_$$$
+{}smpu_temp
+$$$ mpu_temp 
+{}sSystem is too hot. GPU3D will work at
+$$$System is too hot. GPU3D will work at
+{}sGPU3D clock will
+$$$  GPU3D clock will
+
+
+	 group_start 	
+nxp tp2855_~!@
+{}s---------- beginning of crash
+{}e~!@   ---------- beginning of crash
+{}s--------- beginning of main
+{}e~!@  --------- beginning of main
+{}snisy
+~!@  nisy
+{}sCamera Status from
+~!@  Camera Status from
+{}s--------- beginning of system
+{}e~!@   --------- beginning of system
+{}sCameraService: 
+~!@   CameraService: 
+{}sboard_type=0x
+~!@   board_type=0x
+{}sinit: Reboot start
+~!@   init: Reboot start
+{}sShutdown timeout
+~!@  Shutdown timeout
+{}sActivityManager: Reason:
+~!@  ActivityManager: Reason:
+nisy
+~!@  nisy
+{}sLinux version 4.14.98
+~!@  Linux version 4.14.98
+{}sCall trace:
+~!@  Call trace:
+{}sVIDIOC_DQBUF Fail
+~!@  VIDIOC_DQBUF Fail
+{}sFslCameraHAL: closeDev
+~!@  FslCameraHAL: closeDev
+{}s[9-0045]: input_status change:
+~!@#[9-0045]: input_status change:
+{}s[8-0044]: input_status change:
+~!@$[8-0044]: input_status change:
+{}sRestart Src
+~!@  Restart Src
+{}sKernel command line:
+~!@  Kernel command line:
+{}s***  EVENT STATE DUMP  ***
+***  EVENT STATE DUMP  ***  ~!@
+
+
