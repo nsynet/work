@@ -153,12 +153,12 @@ cut here  @!~
 #@!~  onConfigureFailed
 {}ssensor_idx 1, ppw
 @!~  sensor_idx 1, ppw
-{}ssensor_idx 2, ppw
-@!~  sensor_idx 2, ppw
-{}ssensor_idx 3, ppw
-@!~  sensor_idx 3, ppw
-{}ssensor_idx 4, ppw
-@!~  sensor_idx 4, ppw
+{}ssensor_idx 5, ppw
+@!~  sensor_idx 5, ppw
+{}ssensor_idx 6, ppw
+@!~  sensor_idx 6, ppw
+{}ssensor_idx 7, ppw
+@!~  sensor_idx 7, ppw
 {}sCameraActivity#0]
 @!~  CameraActivity#0]
 {}sCam::2] deque fps
@@ -179,18 +179,18 @@ CAR.POWER: onWakeUp  #@!~
 Notify car.power sleep.  #@!~
 {}s:SENSOR_FEATURE_OPEN,sensor id=1
 :SENSOR_FEATURE_OPEN,sensor id=1 #@!~
-{}s:SENSOR_FEATURE_OPEN,sensor id=1
-:SENSOR_FEATURE_OPEN,sensor id=1 #@!~
-{}s:SENSOR_FEATURE_OPEN,sensor id=5
-:SENSOR_FEATURE_OPEN,sensor id=5 #@!~
 {}s:SENSOR_FEATURE_OPEN,sensor id=5
 :SENSOR_FEATURE_OPEN,sensor id=5 #@!~
 {}s:SENSOR_FEATURE_OPEN,sensor id=6
-:SENSOR_FEATURE_OPEN,sensor id=6  #@!~ 
+:SENSOR_FEATURE_OPEN,sensor id=6 #@!~
+{}s:SENSOR_FEATURE_OPEN,sensor id=7
+:SENSOR_FEATURE_OPEN,sensor id=7 #@!~
+{}s:SENSOR_FEATURE_CLOSE,sensor id=1
+:SENSOR_FEATURE_CLOSE,sensor id=1 #@!~
+{}s:SENSOR_FEATURE_CLOSE,sensor id=5
+:SENSOR_FEATURE_CLOSE,sensor id=5 #@!~
 {}s:SENSOR_FEATURE_CLOSE,sensor id=6
 :SENSOR_FEATURE_CLOSE,sensor id=6 #@!~
-{}s:SENSOR_FEATURE_CLOSE,sensor id=7
-:SENSOR_FEATURE_CLOSE,sensor id=7 #@!~
 {}s:SENSOR_FEATURE_CLOSE,sensor id=7
 :SENSOR_FEATURE_CLOSE,sensor id=7 #@!~
 {}sconnect: already connected
@@ -387,8 +387,8 @@ cut here  ~!@
 ~!@#  preview failed
 {}sonConfigureFailed
 ~!@#  onConfigureFailed
-{}ssensor_idx 1, ppw
-~!@  sensor_idx 1, ppw
+{}ssensor_idx 0, ppw
+~!@  sensor_idx 0, ppw
 {}ssensor_idx 2, ppw
 ~!@  sensor_idx 2, ppw
 {}ssensor_idx 3, ppw
@@ -413,22 +413,22 @@ df_display_log: mtk_drm_suspend_release_present_fence release fence failed   #~!
 CAR.POWER: onWakeUp  ~!@#
 {}sNotify car.power sleep.
 Notify car.power sleep.  ~!@#
-{}s:SENSOR_FEATURE_OPEN,sensor id=1
-:SENSOR_FEATURE_OPEN,sensor id=1 ~!@#
-{}s:SENSOR_FEATURE_OPEN,sensor id=1
-:SENSOR_FEATURE_OPEN,sensor id=1 ~!@#
-{}s:SENSOR_FEATURE_OPEN,sensor id=5
-:SENSOR_FEATURE_OPEN,sensor id=5 ~!@#
-{}s:SENSOR_FEATURE_OPEN,sensor id=5
-:SENSOR_FEATURE_OPEN,sensor id=5 ~!@#
-{}s:SENSOR_FEATURE_OPEN,sensor id=6
-:SENSOR_FEATURE_OPEN,sensor id=6  ~!@# 
-{}s:SENSOR_FEATURE_CLOSE,sensor id=6
-:SENSOR_FEATURE_CLOSE,sensor id=6 ~!@#
-{}s:SENSOR_FEATURE_CLOSE,sensor id=7
-:SENSOR_FEATURE_CLOSE,sensor id=7 ~!@#
-{}s:SENSOR_FEATURE_CLOSE,sensor id=7
-:SENSOR_FEATURE_CLOSE,sensor id=7 ~!@#
+{}s:SENSOR_FEATURE_OPEN,sensor id=0
+:SENSOR_FEATURE_OPEN,sensor id=0 ~!@#
+{}s:SENSOR_FEATURE_OPEN,sensor id=2
+:SENSOR_FEATURE_OPEN,sensor id=2 ~!@#
+{}s:SENSOR_FEATURE_OPEN,sensor id=3
+:SENSOR_FEATURE_OPEN,sensor id=3 ~!@#
+{}s:SENSOR_FEATURE_OPEN,sensor id=4
+:SENSOR_FEATURE_OPEN,sensor id=4 ~!@#
+{}s:SENSOR_FEATURE_CLOSE,sensor id=0
+:SENSOR_FEATURE_CLOSE,sensor id=0 ~!@#
+{}s:SENSOR_FEATURE_CLOSE,sensor id=2
+:SENSOR_FEATURE_CLOSE,sensor id=2 ~!@#
+{}s:SENSOR_FEATURE_CLOSE,sensor id=3
+:SENSOR_FEATURE_CLOSE,sensor id=3 ~!@#
+{}s:SENSOR_FEATURE_CLOSE,sensor id=4
+:SENSOR_FEATURE_CLOSE,sensor id=4 ~!@#
 {}sconnect: already connected
 ~!@#  connect: already connected
 {}simgsensor]open
