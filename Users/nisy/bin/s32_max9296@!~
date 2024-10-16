@@ -1,0 +1,5 @@
+s/cut here/@!~ &/g
+s/ds90ub940: read id failed/@!~ &/g
+s/@@@@@@@ RES0_REG_ARRAY/& @!~ /g
+s/\[ERROR\]/& @!~ /g
+s/ispif_process_irq/@!~ &/g

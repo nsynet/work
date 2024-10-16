@@ -1,0 +1,3 @@
+#!/bin/bash
+batch_extract_k
+batch_replace_k_p1 ~/bin/s32_tw9992@@@

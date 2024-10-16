@@ -2,6 +2,7 @@
 batch_extract_k
 K_STR="kernel_log_"
 
+K_DF_STR="logcat_kernel"
 
 if [ ! -f $1 ]; then
 echo $1 "  not exist!"
@@ -12,7 +13,7 @@ RESULT=$(find)
 for FILE in $RESULT
 do
 
-if [[ $FILE == *$K_STR* ]]
+if [[ $FILE == *$K_STR* ]] || [[ $FILE == *$K_DF_STR* ]];
 then
 echo $FILE
 sed -i -f $1 $FILE

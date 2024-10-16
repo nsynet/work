@@ -4,19 +4,31 @@ Version 2.2
 	 group_start 	
 _mtk_system_~~~
 {}sAndroidRuntime: Process
-nisy:疑似部分模块crash，被重新拉起  ~~~  AndroidRuntime: Process
+nisy:鐤戜技閮ㄥ垎妯″潡crash锛岃閲嶆柊鎷夎捣  ~~~  AndroidRuntime: Process
 {}sUnable to start service Intent
-nisy:启动部分不存在的服务 ~~~  Unable to start service Intent
+nisy:鍚姩閮ㄥ垎涓嶅瓨鍦ㄧ殑鏈嶅姟 ~~~  Unable to start service Intent
 
 
 	 group_start 	
-d600 i2c-2_max96722_camera
+_test_only
+{}p small than grab window_v:^\d{1,3}$_960
+~!@#   small than grab window_v:^\d{1,3}$_960
+
+
+	 group_start 	
+_test_only2
+{}p^\d{1,3}$_960
+~!@  ^\d{1,3}$_960
+
+
+	 group_start 	
+d600 i2c-2_max96722_camera  @!~
 {}MPU_VERSION
 #@!~  MPU_VERSION
 {}sLinux version 4.14
 @!~  Linux version 4.14
-{}ssmall than grab window_w:0_2560
-#@!~  small than grab window_w:0_2560
+{}ssmall than grab window_
+#@!~  small than grab window_
 {}s[ISP][ISP_WaitIrq] ERRRR
 #@!~  [ISP][ISP_WaitIrq] ERRRR
 {}smax96722b0_mipi_yuv_camera_sensor[write_cmos_sensor
@@ -27,14 +39,6 @@ d600 i2c-2_max96722_camera
 #@!~  max96722b2_mipi_yuv_camera_sensor[write_cmos_sensor
 {}smax96722b3_mipi_yuv_camera_sensor[write_cmos_sensor
 #@!~  max96722b3_mipi_yuv_camera_sensor[write_cmos_sensor
-{}smax96722b0_mipi_yuv_camera_sensor[write_cmos_max9295
-@!~  max96722b0_mipi_yuv_camera_sensor[write_cmos_max9295
-{}smax96722b1_mipi_yuv_camera_sensor[write_cmos_max9295
-@!~  max96722b1_mipi_yuv_camera_sensor[write_cmos_max9295
-{}smax96722b2_mipi_yuv_camera_sensor[write_cmos_max9295
-@!~  max96722b2_mipi_yuv_camera_sensor[write_cmos_max9295
-{}smax96722b3_mipi_yuv_camera_sensor[write_cmos_max9295
-@!~  max96722b3_mipi_yuv_camera_sensor[write_cmos_max9295
 {}smax96722b0_mipi_yuv_camera_sensor[write_cmos_max9670x
 #@!~  max96722b0_mipi_yuv_camera_sensor[write_cmos_max9670x
 {}smax96722b1_mipi_yuv_camera_sensor[write_cmos_max9670x
@@ -166,14 +170,14 @@ cut here  @!~
 {}sCam::3] deque fps
 @!~  Cam::3] deque fps
 {}sPM: suspend exit
-内核日志中的modem唤醒#@!~ PM: suspend exit
+鍐呮牳鏃ュ織涓殑modem鍞ら啋#@!~ PM: suspend exit
 {}sPM: suspend entry
-内核日志中的modem休眠#@!~  PM: suspend entry
+鍐呮牳鏃ュ織涓殑modem浼戠湢#@!~  PM: suspend entry
 {}sdf_display_log set desav backlight is disabled = 1 1
-df_display_log set desav backlight is disabled = 1 1  ##@!~   唤醒
+df_display_log set desav backlight is disabled = 1 1  ##@!~   鍞ら啋
 {}sdf_display_log: mtk_drm_suspend_release_present_fence release fence failed
-df_display_log: mtk_drm_suspend_release_present_fence release fence failed   ##@!~ 每次执行休眠时会进行打印，正常休眠完成仅打印一次
-{}sCAR.POWER: onWakeUp
+df_display_log: mtk_drm_suspend_release_present_fence release fence failed   ##@!~ 姣忔鎵ц浼戠湢鏃朵細杩涜鎵撳嵃锛屾甯镐紤鐪犲畬鎴愪粎鎵撳嵃涓�娆
+d{}sCAR.POWER: onWakeUp
 CAR.POWER: onWakeUp  #@!~
 {}sNotify car.power sleep.
 Notify car.power sleep.  #@!~
@@ -195,10 +199,6 @@ Notify car.power sleep.  #@!~
 :SENSOR_FEATURE_CLOSE,sensor id=7 #@!~
 {}sconnect: already connected
 #@!~  connect: already connected
-{}simgsensor]open
-imgsensor]open @!~
-{}simgsensor]close
-imgsensor]close  @!~
 {}sfor HAL version default and Camera API version 2
 for HAL version default and Camera API version 2  @!~
 {}sCall trace:
@@ -209,8 +209,8 @@ nisy  #@!~
 Check_Max96722Bx_camera_status]#@!~ link status changed
 {}smax96722B_wait_link_OK_
 max96722B_wait_link_OK_ @!~
-{}s查询芯片ID
-查询芯片ID @!~
+{}s鏌ヨ鑺墖ID
+鏌ヨ鑺墖ID @!~
 {}s[sensor_init] detect link
 [sensor_init] #@!~ detect link
 {}sNo free MUX for CAM
@@ -238,7 +238,7 @@ Camera 2: notifyError: Camera HAL reported serious device error  #@!~
 {}sCamera 3: notifyError: Camera HAL reported serious device error
 Camera 3: notifyError: Camera HAL reported serious device error  #@!~
 {}sonVersionReceived version
-#@!~  nisy:编译的分支:onVersionReceived version
+#@!~  nisy:缂栬瘧鐨勫垎鏀?onVersionReceived version
 {}sbus tied low
 #@!~ bus tied low
 {}sFATAL EXCEPTION
@@ -246,13 +246,17 @@ Camera 3: notifyError: Camera HAL reported serious device error  #@!~
 
 
 	 group_start 	
-d600 i2c-8_max96722_camera
+d600 i2c-8_max96722_camera  ~!@
+{}sI2C read failed bus=camera_main
+~!@  I2C read failed bus=camera_main
+{}sI2C write failed bus=camera_main
+~!@ I2C write failed bus=camera_main
 {}MPU_VERSION
 ~!@#  MPU_VERSION
 {}sLinux version 4.14
 ~!@  Linux version 4.14
-{}ssmall than grab window_w:0_2560
-~!@#  small than grab window_w:0_2560
+{}ssmall than grab window_
+~!@#  small than grab window_
 {}s[ISP][ISP_WaitIrq] ERRRR
 ~!@#  [ISP][ISP_WaitIrq] ERRRR
 {}smax96722a0_mipi_yuv_camera_sensor[write_cmos_sensor
@@ -263,14 +267,6 @@ d600 i2c-8_max96722_camera
 ~!@#  max96722a2_mipi_yuv_camera_sensor[write_cmos_sensor
 {}smax96722a3_mipi_yuv_camera_sensor[write_cmos_sensor
 ~!@#  max96722a3_mipi_yuv_camera_sensor[write_cmos_sensor
-{}smax96722a0_mipi_yuv_camera_sensor[write_cmos_max9295
-~!@  max96722a0_mipi_yuv_camera_sensor[write_cmos_max9295
-{}smax96722a1_mipi_yuv_camera_sensor[write_cmos_max9295
-~!@  max96722a1_mipi_yuv_camera_sensor[write_cmos_max9295
-{}smax96722a2_mipi_yuv_camera_sensor[write_cmos_max9295
-~!@  max96722a2_mipi_yuv_camera_sensor[write_cmos_max9295
-{}smax96722a3_mipi_yuv_camera_sensor[write_cmos_max9295
-~!@  max96722a3_mipi_yuv_camera_sensor[write_cmos_max9295
 {}smax96722a0_mipi_yuv_camera_sensor[write_cmos_max9670x
 ~!@#  max96722a0_mipi_yuv_camera_sensor[write_cmos_max9670x
 {}smax96722a1_mipi_yuv_camera_sensor[write_cmos_max9670x
@@ -402,14 +398,14 @@ cut here  ~!@
 {}sCam::3] deque fps
 ~!@  Cam::3] deque fps
 {}sPM: suspend exit
-内核日志中的modem唤醒~!@# PM: suspend exit
+鍐呮牳鏃ュ織涓殑modem鍞ら啋~!@# PM: suspend exit
 {}sPM: suspend entry
-内核日志中的modem休眠~!@#  PM: suspend entry
+鍐呮牳鏃ュ織涓殑modem浼戠湢~!@#  PM: suspend entry
 {}sdf_display_log set desav backlight is disabled = 1 1
-df_display_log set desav backlight is disabled = 1 1  #~!@#   唤醒
+df_display_log set desav backlight is disabled = 1 1  #~!@#   鍞ら啋
 {}sdf_display_log: mtk_drm_suspend_release_present_fence release fence failed
-df_display_log: mtk_drm_suspend_release_present_fence release fence failed   #~!@# 每次执行休眠时会进行打印，正常休眠完成仅打印一次
-{}sCAR.POWER: onWakeUp
+df_display_log: mtk_drm_suspend_release_present_fence release fence failed   #~!@# 姣忔鎵ц浼戠湢鏃朵細杩涜鎵撳嵃锛屾甯镐紤鐪犲畬鎴愪粎鎵撳嵃涓�娆
+d{}sCAR.POWER: onWakeUp
 CAR.POWER: onWakeUp  ~!@#
 {}sNotify car.power sleep.
 Notify car.power sleep.  ~!@#
@@ -431,10 +427,6 @@ Notify car.power sleep.  ~!@#
 :SENSOR_FEATURE_CLOSE,sensor id=4 ~!@#
 {}sconnect: already connected
 ~!@#  connect: already connected
-{}simgsensor]open
-imgsensor]open ~!@
-{}simgsensor]close
-imgsensor]close  ~!@
 {}sfor HAL version default and Camera API version 2
 for HAL version default and Camera API version 2  ~!@
 {}sCall trace:
@@ -445,18 +437,14 @@ nisy  ~!@#
 Check_Max96722Ax_camera_status]~!@# link status changed
 {}smax96722A_wait_link_OK_
 max96722A_wait_link_OK_ ~!@
-{}s查询芯片ID
-查询芯片ID ~!@
+{}s鏌ヨ鑺墖ID
+鏌ヨ鑺墖ID ~!@
 {}s[sensor_init] detect link
 [sensor_init] ~!@# detect link
 {}sNo free MUX for CAM
 ~!@#  No free MUX for CAM
 {}s: shutdown
 : shutdown  ~!@#
-{}sI2C read failed bus=camera_sub
-~!@  I2C read failed bus=camera_sub
-{}sI2C write failed bus=camera_sub
-~!@  I2C write failed bus=camera_sub
 {}sWARN:Check I2C-2
 ~!@#  WARN:Check I2C-2
 {}sCameraVideoFragment: startPreview
@@ -472,7 +460,7 @@ Camera 2: notifyError: Camera HAL reported serious device error  ~!@#
 {}sCamera 3: notifyError: Camera HAL reported serious device error
 Camera 3: notifyError: Camera HAL reported serious device error  ~!@#
 {}sonVersionReceived version
-~!@#  nisy:编译的分支:onVersionReceived version
+~!@#  nisy:缂栬瘧鐨勫垎鏀?onVersionReceived version
 {}sbus tied low
 ~!@# bus tied low
 {}sFATAL EXCEPTION
@@ -480,14 +468,13 @@ Camera 3: notifyError: Camera HAL reported serious device error  ~!@#
 
 
 	 group_start 	
-M57 i2c-2_camera
-
+M57 i2c-2_camera  @!~
 {}MPU_VERSION
 #@!~  MPU_VERSION
 {}sLinux version 4.14
 @!~  Linux version 4.14
-{}ssmall than grab window_w:0_2560
-#@!~  small than grab window_w:0_2560
+{}ssmall than grab window_
+#@!~  small than grab window_
 {}s[ISP][ISP_WaitIrq] ERRRR
 #@!~  [ISP][ISP_WaitIrq] ERRRR
 {}smax96722b0_mipi_yuv_camera_sensor[write_cmos_sensor
@@ -645,14 +632,14 @@ cut here  @!~
 {}sCam::3] deque fps
 @!~  Cam::3] deque fps
 {}sPM: suspend exit
-内核日志中的modem唤醒#@!~ PM: suspend exit
+鍐呮牳鏃ュ織涓殑modem鍞ら啋#@!~ PM: suspend exit
 {}sPM: suspend entry
-内核日志中的modem休眠#@!~  PM: suspend entry
+鍐呮牳鏃ュ織涓殑modem浼戠湢#@!~  PM: suspend entry
 {}sdf_display_log set desav backlight is disabled = 1 1
-df_display_log set desav backlight is disabled = 1 1  ##@!~   唤醒
+df_display_log set desav backlight is disabled = 1 1  ##@!~   鍞ら啋
 {}sdf_display_log: mtk_drm_suspend_release_present_fence release fence failed
-df_display_log: mtk_drm_suspend_release_present_fence release fence failed   ##@!~ 每次执行休眠时会进行打印，正常休眠完成仅打印一次
-{}sCAR.POWER: onWakeUp
+df_display_log: mtk_drm_suspend_release_present_fence release fence failed   ##@!~ 姣忔鎵ц浼戠湢鏃朵細杩涜鎵撳嵃锛屾甯镐紤鐪犲畬鎴愪粎鎵撳嵃涓�娆
+d{}sCAR.POWER: onWakeUp
 CAR.POWER: onWakeUp  #@!~
 {}sNotify car.power sleep.
 Notify car.power sleep.  #@!~
@@ -688,8 +675,8 @@ nisy  #@!~
 Check_Max96722Bx_camera_status]#@!~ link status changed
 {}smax96722B_wait_link_OK_
 max96722B_wait_link_OK_ @!~
-{}s查询芯片ID
-查询芯片ID @!~
+{}s鏌ヨ鑺墖ID
+鏌ヨ鑺墖ID @!~
 {}s[sensor_init] detect link
 [sensor_init] #@!~ detect link
 {}sNo free MUX for CAM
@@ -697,15 +684,15 @@ max96722B_wait_link_OK_ @!~
 {}s: shutdown
 : shutdown  #@!~
 {}sopenCamera: isCameraPermission: false
-openCamera: isCameraPermission: false  #@!~  摄像头权限没打开,DMS不能使用
+openCamera: isCameraPermission: false  #@!~  鎽勫儚澶存潈闄愭病鎵撳紑,DMS涓嶈兘浣跨敤
 {}sopenCamera: isCameraPermission: true
-openCamera: isCameraPermission: true  @!~  摄像头权限打开,DMS可以使用
+openCamera: isCameraPermission: true  @!~  鎽勫儚澶存潈闄愭墦寮�,DMS鍙互浣跨敤
 {}sDFFactoryPattern: PreviewFragment: createTextureViewHelper faceId = 0, facingInfo = DMS
 DFFactoryPattern: PreviewFragment: createTextureViewHelper faceId = 0, facingInfo = DMS  #@!~
 {}sDFFactoryPattern: PreviewFragment: createTextureViewHelper faceId = 1, facingInfo = OMS
 DFFactoryPattern: PreviewFragment: createTextureViewHelper faceId = 1, facingInfo = OMS  #@!~
 {}ssendDMSState  dmsStatus
-sendDMSState  dmsStatus  #@!~  DMS=3检测故障
+sendDMSState  dmsStatus  #@!~  DMS=3妫�娴嬫晠闅
 {}sRead id fail, id:
 #@!~  Read id fail, id:
 {}sdms init is false
@@ -729,20 +716,21 @@ Camera 2: notifyError: Camera HAL reported serious device error  #@!~
 {}sCamera 3: notifyError: Camera HAL reported serious device error
 Camera 3: notifyError: Camera HAL reported serious device error  #@!~
 {}sonVersionReceived version
-#@!~  nisy:编译的分支:onVersionReceived version
+#@!~  nisy:缂栬瘧鐨勫垎鏀?onVersionReceived version
 {}sbus tied low
 #@!~ bus tied low
 {}sFATAL EXCEPTION
-~!@  FATAL EXCEPTION
-
+#@!~  FATAL EXCEPTION
+{}s] ERROR: N:3
+] #@!~  //nisy:camera id=3! ERROR: N:3
 	 group_start 	
-M57 i2c-8_camera
+M57 i2c-8_camera  ~!@
 {}sMPU_VERSION
 ~!@  MPU_VERSION
 {}sLinux version 4.14
 ~!@  Linux version 4.14
-{}ssmall than grab window_w:02560
-~!@#  small than grab window_w:0_2560
+{}ssmall than grab window_
+~!@#  small than grab window_
 {}s[ISP][ISP_WaitIrq] ERRRR
 ~!@#  [ISP][ISP_WaitIrq] ERRRR
 {}smax96722_mipi_yuv_camera_sensor[Chenck_Sensor_Signal] Sensor Status
@@ -830,13 +818,13 @@ nnn  ~!@#------ beginning of main
 {}sCam::0] deque fps
 ~!@  Cam::0] deque fps
 {}sPM: suspend exit
-内核日志中的modem唤醒  ~!@ PM: suspend exit
+鍐呮牳鏃ュ織涓殑modem鍞ら啋  ~!@ PM: suspend exit
 {}sPM: suspend entry
-内核日志中的modem休眠  ~!@  PM: suspend entry
+鍐呮牳鏃ュ織涓殑modem浼戠湢  ~!@  PM: suspend entry
 {}sdf_display_log set desav backlight is disabled = 1 1
-df_display_log set desav backlight is disabled = 1 1  ~!@   唤醒
+df_display_log set desav backlight is disabled = 1 1  ~!@   鍞ら啋
 {}sdf_display_log: mtk_drm_suspend_release_present_fence release fence failed
-df_display_log: mtk_drm_suspend_release_present_fence release fence failed   ~!@ 每次执行休眠时会进行打印，正常休眠完成仅打印一次
+df_display_log: mtk_drm_suspend_release_present_fence release fence failed   ~!@ 姣忔鎵ц浼戠湢鏃朵細杩涜鎵撳嵃锛屾甯镐紤鐪犲畬鎴愪粎鎵撳嵃涓�娆
 {}sCAR.POWER: onWakeUp
 CAR.POWER: onWakeUp  ~!@#
 {}sNotify car.power sleep.
@@ -845,18 +833,6 @@ Notify car.power sleep.  ~!@#
 :SENSOR_FEATURE_OPEN,sensor id=0  ~!@# 
 {}s:SENSOR_FEATURE_CLOSE,sensor id=0
 :SENSOR_FEATURE_CLOSE,sensor id=0  ~!@# 
-{}s:SENSOR_FEATURE_OPEN,sensor id=2
-:SENSOR_FEATURE_OPEN,sensor id=2  ~!@# 
-{}s:SENSOR_FEATURE_CLOSE,sensor id=2
-:SENSOR_FEATURE_CLOSE,sensor id=2  ~!@# 
-{}s:SENSOR_FEATURE_OPEN,sensor id=3
-:SENSOR_FEATURE_OPEN,sensor id=3  ~!@# 
-{}s:SENSOR_FEATURE_CLOSE,sensor id=3
-:SENSOR_FEATURE_CLOSE,sensor id=3  ~!@# 
-{}s:SENSOR_FEATURE_OPEN,sensor id=4
-:SENSOR_FEATURE_OPEN,sensor id=4  ~!@# 
-{}s:SENSOR_FEATURE_CLOSE,sensor id=4
-:SENSOR_FEATURE_CLOSE,sensor id=4  ~!@# 
 {}sneedUpdate : 1
 needUpdate : 1  ~!@#
 {}senter avm
@@ -874,7 +850,7 @@ nisy  ~!@#
 {}s: shutdown
 : shutdown  ~!@
 {}sMAX96722:
-~!@#  MAX96722:
+MAX96722:
 {}sI2C read failed bus=camera_main
 ~!@  I2C read failed bus=camera_main
 {}sI2C write failed bus=camera_main
@@ -890,7 +866,7 @@ Camera 0: notifyError: Camera HAL reported serious device error  ~!@#
 {}sgearState=
 gearState=
 {}sonVersionReceived version
-~!@#  nisy:编译的分支:onVersionReceived version
+~!@#  nisy:缂栬瘧鐨勫垎鏀?onVersionReceived version
 {}sdeque fail
 ~!@#  deque fail
 {}sCheck_Max96722_video_lock
@@ -899,12 +875,32 @@ gearState=
 ~!@#  Check_Max96722_ERRB_Status
 {}sbus tied low
 ~!@# bus tied low
+{}s] ERROR: N:0
+] ~!@# //nisy:camera id=0!  ERROR: N:0
+{}scamera_max96722_detect_err
+camera_max96722_detect_err  ~!@#
+{}sdequeThread Exit
+~!@#  dequeThread Exit
 
 
 	 group_start 	
 mtk yocto
 {}sJumping into linux ...
 ~!@  Jumping into linux ...
+
+
+	 group_start 	
+mtk_system
+Linux version 4.14
+
+
+
+	 group_start 	
+mtk_thermal ^^^
+{}sI ThermalEventListener
+I ^^^ ThermalEventListener
+{}sLinux version 4.14
+^^^ Linux version 4.14
 
 
 	 group_start 	
@@ -951,22 +947,22 @@ ds90ub940_reset_store  !!!
 @!~  GearState=
 {}s[TaskQueue][postTask]add task [EXIT] to queue
 @!~  [TaskQueue][postTask]add task [EXIT] to queue
-{}sACC_STATE
-@!~  ACC_STATE
+{}sonPropertyEvent ACC_STATE=
+onPropertyEvent @!~  ACC_STATE=
 {}s[TaskQueue][processEnterReverseTask]AVM HD APA Enter
 @!~  [TaskQueue][processEnterReverseTask]AVM HD APA Enter
 {}sRestart Src
 @!~  Restart Src
 {}sboard_type=286335522
-C样 E2 8G @!~  board_type=286335522  
+C鏍?E2 8G @!~  board_type=286335522  
 {}sboard_type=286339891
-@!~ C样 E2 品牌音响8G board_type=286339891
+@!~ C鏍?E2 鍝佺墝闊冲搷8G board_type=286339891
 {}sboard_type=1431642658
-@!~C样 E2 6G  board_type=1431642658
+@!~C鏍?E2 6G  board_type=1431642658
 {}sboard_type=1431651396
-@!~C样 E3 8G(无品牌音响)  board_type=1431651396
+@!~C鏍?E3 8G(鏃犲搧鐗岄煶鍝?  board_type=1431651396
 {}sboard_type=286344260
-@!~ C样 E3 8G+品牌音响  board_type=286344260
+@!~ C鏍?E3 8G+鍝佺墝闊冲搷  board_type=286344260
 {}s***  EVENT STATE DUMP  ***
 ***  EVENT STATE DUMP  ***  #@!~
 {}sVideo capture is Blocking
@@ -980,13 +976,15 @@ Video capture is Blocking  #@!~
 {}s[ds90ub940.c][check_deserializer_id][ds90ub940][8-002c]: Chip ID: _UB940
 [ds90ub940.c][check_deserializer_id][ds90ub940][8-002c]: Chip ID: _UB940  #@!~
 {}sAVM HD APA Enter 
-AVM HD APA Enter @!~  G59 E3进入环视界面
+AVM HD APA Enter @!~  G59 E3杩涘叆鐜鐣岄潰
 {}scamera_system_off_on  ++
 #@!~camera_system_off_on  ++
 {}sothers is not link  !!!
 others is not link  !!!  @!~
 {}sReadFrameFps is 
 @!~  ReadFrameFps is 
+{}sCamera3-Stream: getBuffer: wait for output buffer return timed out after
+#@!~  Camera3-Stream: getBuffer: wait for output buffer return timed out after
 
 
 	 group_start 	
@@ -1042,15 +1040,15 @@ max9286 init OK  ~!@
 {}sKernel command line:
 ~!@  Kernel command line:
 {}sboard_type=286335522
-C样 E2 8G ~!@  board_type=286335522  
+C鏍?E2 8G ~!@  board_type=286335522  
 {}sboard_type=286339891
-~!@ C样 E2 品牌音响8G board_type=286339891
+~!@ C鏍?E2 鍝佺墝闊冲搷8G board_type=286339891
 {}sboard_type=1431642658
-~!@C样 E2 6G  board_type=1431642658
+~!@C鏍?E2 6G  board_type=1431642658
 {}sboard_type=1431651396
-~!@C样 E3? 8G(无品牌音响)  board_type=1431651396
+~!@C鏍?E3? 8G(鏃犲搧鐗岄煶鍝?  board_type=1431651396
 {}sboard_type=286344260
-~!@ C样 E3? 8G+品牌音响  board_type=286344260
+~!@ C鏍?E3? 8G+鍝佺墝闊冲搷  board_type=286344260
 {}s[frameFpsPrint]AVM fps
 ~!@  [frameFpsPrint]AVM fps
 {}sinit: starting service 'reverse_svc'
@@ -1080,11 +1078,33 @@ updateFrame thread is sleep,restart...  ~!@#
 {}s[max9286_reset_and_init]
 ~!@#  [max9286_reset_and_init]
 {}srecoveryd server start
-~!@  应用层编译时间   recoveryd server start
+~!@  搴旂敤灞傜紪璇戞椂闂?  recoveryd server start
 {}sAVM Get Camera Data fps: 25
 ~!@ AVM Get Camera Data good fps: 25
 {}sAVM Get Camera Data fps
 ~!@#  AVM Get Camera Data fps
+{}sbacktrace:
+backtrace:  ~!@#
+{}smxc-isi 58100000
+~!@ isi.0=mxc-isi 58100000
+{}smxc-isi 58110000
+~!@ isi.1=mxc-isi 58110000
+{}smxc-isi 58120000
+~!@ isi.2=mxc-isi 58120000
+{}smxc-isi 58130000
+~!@ isi.3=mxc-isi 58130000
+{}smxc-isi 58140000
+~!@ isi.4=mxc-isi 58140000
+{}smxc-isi 58150000
+~!@ isi.5=mxc-isi 58150000
+{}smxc-isi 58160000
+~!@ isi.6=mxc-isi 58160000
+{}smxc-isi 58170000
+~!@ isi.7=mxc-isi 58170000
+{}smxc_isi_cap_streamo
+~!@  mxc_isi_cap_streamo
+{}sFailed power operation on resource
+~!@#  Failed power operation on resource
 
 
 	 group_start 	
@@ -1101,8 +1121,8 @@ nxp max96722_@!~
 @!~  max96722_init_work_fun]
 {}smax96722_g_input_status]
 @!~  max96722_g_input_status]
-{}s---------- beginning of crash
-{}e#@!~    ---------- beginning of crash
+{}sbeginning of crash
+beginning of crash   #@!~
 {}sboard_type=0x
 @!~    board_type=0x
 {}sinit: Reboot start
@@ -1131,22 +1151,22 @@ nxp max96722_@!~
 @!~  GearState=
 {}s[TaskQueue][postTask]add task [EXIT] to queue
 @!~  [TaskQueue][postTask]add task [EXIT] to queue
-{}sACC_STATE
-@!~  ACC_STATE
+{}sonPropertyEvent ACC_STATE=
+onPropertyEvent @!~ ACC_STATE=
 {}s[TaskQueue][processEnterReverseTask]AVM HD APA Enter
 @!~  [TaskQueue][processEnterReverseTask]AVM HD APA Enter
 {}sRestart Src
 @!~  Restart Src
 {}sboard_type=286335522
-C样 E2 8G @!~  board_type=286335522  
+C鏍?E2 8G @!~  board_type=286335522  
 {}sboard_type=286339891
-@!~ C样 E2 品牌音响8G board_type=286339891
+@!~ C鏍?E2 鍝佺墝闊冲搷8G board_type=286339891
 {}sboard_type=1431642658
-@!~C样 E2 6G  board_type=1431642658
+@!~C鏍?E2 6G  board_type=1431642658
 {}sboard_type=1431651396
-@!~C样 E3? 8G(无品牌音响)  board_type=1431651396
+@!~C鏍?E3? 8G(鏃犲搧鐗岄煶鍝?  board_type=1431651396
 {}sboard_type=286344260
-@!~ C样 E3? 8G+品牌音响  board_type=286344260
+@!~ C鏍?E3? 8G+鍝佺墝闊冲搷  board_type=286344260
 {}s***  EVENT STATE DUMP  ***
 ***  EVENT STATE DUMP  ***  #@!~
 {}s[max96722_get_fmt]: which=0x1,pad=5
@@ -1176,7 +1196,7 @@ Video capture is Blocking  #@!~
 {}sread reg 0x400 wrong
 #@!~  read reg 0x400 wrong
 {}sAVM HD APA Enter 
-AVM HD APA Enter @!~  G59 E3进入环视界面
+AVM HD APA Enter @!~  G59 E3杩涘叆鐜鐣岄潰
 {}scamera_system_off_on  ++
 #@!~camera_system_off_on  ++
 {}sVideo capture is Blocking
@@ -1200,7 +1220,17 @@ AVM HD APA Enter @!~  G59 E3进入环视界面
 {}sdls_reverse_svr: [StateManager][setState] State changed
 #@!~  dls_reverse_svr: [StateManager][setState] State changed
 {}srecoveryd server start
-@!~  应用层编译时间   recoveryd server start
+@!~  搴旂敤灞傜紪璇戞椂闂?  recoveryd server start
+{}iread reg 0x400
+#@!~  read reg 0x400
+{}s[max96722_init]
+#@!~  [max96722_init]
+{}sBegin start set MAX96722 reg
+#@!~  Begin start set MAX96722 reg
+{}sCamera3-Stream: getBuffer: wait for output buffer return timed out after
+#@!~  Camera3-Stream: getBuffer: wait for output buffer return timed out after
+{}sFailed power operation on resource
+#@!~  Failed power operation on resource
 
 
 	 group_start 	
@@ -1255,5 +1285,183 @@ nisy
 ~!@  Kernel command line:
 {}s***  EVENT STATE DUMP  ***
 ***  EVENT STATE DUMP  ***  ~!@
+tp2855_s_stream
+tp2855_s_stream  ~!@
+{}sFailed power operation on resource
+~!@#  Failed power operation on resource
+{}s[ImageProvider][updateCameraLinkState]linkState
+~!@ [ImageProvider][updateCameraLinkState]linkState
+{}sCamera state change event
+~!@  Camera state change event
+
+
+	 group_start 	
+S32_max9286_avm
+{}sLinux version 4.14.117+
+~!@#  Linux version 4.14.117+
+{}smax9286 cfgtype =
+~!@ max9286 cfgtype =
+{}s[max9286
+~!@ [max9286
+{}s@@@@@@@ sensor_name =max9286
+~!@  @@@@@@@ sensor_name =max9286
+{}s@@@@@@@ MAX9286
+~!@  @@@@@@@ MAX9286
+{}s--------- beginning of main
+~!@#  --------- beginning of main
+{}s--------- beginning of crash
+~!@#  ---------- beginning of crash
+{}s--------- beginning of system
+~!@# --------- beginning of system
+{}sCall trace:
+~!@#  Call trace:
+{}sbacktrace:
+~!@#  backtrace:
+{}sais_server: max9286
+~!@  ais_server: max9286
+{}sPM      : suspend
+~!@#  PM      : suspend
+{}sSystemSuspend: initAutosuspend exit kernel suspend
+SystemSuspend: initAutosuspend exit kernel suspend  ~!@#
+{}sSystemSuspend: initAutosuspend try kernel suspend
+SystemSuspend: initAutosuspend try kernel suspend  ~!@#
+{}sqcarcam_get_frame failed
+~!@#  qcarcam_get_frame failed
+{}smsm_sensor_config: max9286
+~!@  msm_sensor_config: max9286
+{}sshow start
+~!@  show start
+{}sshow end
+~!@  show end
+{}shide start
+~!@  hide start
+{}shide end
+~!@  hide end
+{}sActivityManager: Low on memory
+~!@#  ActivityManager: Low on memory
+{}sActivityManager: Process com.dftc.launcher
+~!@#  ActivityManager: Process com.dftc.launcher
+{}scamera FPS
+~!@  camera FPS
+{}sCSI2_CMD_ID_CONFIG failed
+~!@#  CSI2_CMD_ID_CONFIG failed
+{}sonSignalChanged {60, 7}
+onSignalChanged {60, 7}   ~!@#  gear R
+{}sonSignalChanged {60, 5}
+onSignalChanged {60, 5}  ~!@# gear P
+{}senter AVM by GearR
+enter AVM by GearR  ~!@#
+{}s[max9286_i2c_read]
+[max9286_i2c_read] ~!@#
+{}s[max9286_i2c_write]
+[max9286_i2c_write]~!@#
+{}smsm_sensor_config: max9286 end 
+~!@# msm_sensor_config: max9286 end 
+{}sWARN Health signal timeout. 
+~!@# WARN Health signal timeout. 
+{}spc      :
+~!@#   pc      :
+{}sKernel command line:
+~!@  Kernel command line:
+
+
+	 group_start 	
+S32_max9296
+{}sLinux version 4.14.117+
+@!~  Linux version 4.14.117+
+{}smax9296 cfgtype =
+@!~ max9296 cfgtype =
+{}s[max9296
+@!~ [max9296
+{}s@@@@@@@ sensor_name =max9296
+@!~  @@@@@@@ sensor_name =max9296
+{}s@@@@@@@ MAX9296
+@!~  @@@@@@@ MAX9296
+{}s--------- beginning of main
+@!~  --------- beginning of main
+{}s---------- beginning of crash
+@!~  ---------- beginning of crash
+{}s--------- beginning of system
+@!~ --------- beginning of system
+{}sCall trace:
+@!~  Call trace:
+{}sbacktrace:
+@!~  backtrace:
+{}sais_server: max9296
+@!~  ais_server: max9296
+{}sPM      : suspend
+@!~  PM      : suspend
+{}smsm_sensor_config: max9296
+@!~  msm_sensor_config: max9296
+{}s[max9296_i2c_read]
+[max9296_i2c_read]#@!~
+{}s[max9296_i2c_write]
+[max9296_i2c_write]#@!~
+{}spc      :
+@!~  pc      :
+{}sKernel command line:
+@!~  Kernel command line:
+
+
+	 group_start 	
+S32_thermal
+{}sLinux version 4.14.117+
+#$% Linux version 4.14.117+
+{}sDFSignal: [temp]
+#$% DFSignal: [temp]
+{}s--------- beginning of main
+#$%  --------- beginning of main
+{}s---------- beginning of crash
+#$%  ---------- beginning of crash
+{}s--------- beginning of system
+#$% --------- beginning of system
+{}sCall trace:
+#$%  Call trace:
+{}sbacktrace:
+#$%  backtrace:
+{}sPM      : suspend
+#$%  PM      : suspend
+{}sFactoryService: MsgBean
+#$% FactoryService: MsgBean
+{}sDF_SIGNAL: [temp]
+#$% DF_SIGNAL: [temp]
+{}spc      :
+#$%  pc      :
+{}sKernel command line:
+#$%  Kernel command line:
+
+
+	 group_start 	
+S32_tw9992
+{}sLinux version 4.14.117+
+~~!  Linux version 4.14.117+
+{}s[tw9992
+~~! [tw9992
+{}s@@@@@@@ sensor_name =tw9992
+~~!  @@@@@@@ sensor_name =tw9992
+{}s@@@@@@@ tw9992
+~~!  @@@@@@@ tw9992
+{}s--------- beginning of main
+~~!  --------- beginning of main
+{}s---------- beginning of crash
+~~!  ---------- beginning of crash
+{}s--------- beginning of system
+~~! --------- beginning of system
+{}sCall trace:
+~~!  Call trace:
+{}sbacktrace:
+~~!  backtrace:
+{}sais_server: tw9992
+~~!  ais_server: tw9992
+{}sPM      : suspend
+~~!  PM      : suspend
+{}sSystemSuspend: initAutosuspend exit kernel suspend
+SystemSuspend: initAutosuspend exit kernel suspend  ~~!  
+{}sSystemSuspend: initAutosuspend try kernel suspend
+SystemSuspend: initAutosuspend try kernel suspend  ~~!  
+{}sqcarcam_get_frame failed
+~~!  qcarcam_get_frame failed
+{}smsm_sensor_config: TW9992
+~~!  msm_sensor_config: TW9992
 
 

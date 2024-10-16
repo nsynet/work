@@ -1,0 +1,10 @@
+s/ThermalEventListener/#$% &/g
+s/Linux version 4.14/#$% &/g
+s/Thermal_reboot/#$% &/g
+s/WATCHDOG KILLING SYSTEM PROCESS/#$% &/g
+s/Low on memory/#$% &/g
+s/Received sys.powerctl='shutdown,thermal'/ #$% & /g
+s/lowmemorykiller/#$% &/g
+s/lowmem_reserve/#$% &/g
+#s/\.prop \= 289407829\, \.status \= AVAILABLE\, \.value \= \{\.int32Values \= \[/& -- nisy_1_is_off_2_is_low #$% -> /g
+s/onTempChange/#$% &/g

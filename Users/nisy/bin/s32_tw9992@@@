@@ -1,0 +1,2 @@
+s/ tw9992: read id failed/#$$ &/g
+s/@@@@@@@ RES0_REG_ARRAY/& #$$ /g

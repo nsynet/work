@@ -1,0 +1,5 @@
+#!/bin/bash
+batch_extract_km
+batch_replace_k_p1 ~/bin/d600_i2c2_@!~
+batch_replace_m_p1 ~/bin/d600_i2c2_@!~
+echo -e "\a" 

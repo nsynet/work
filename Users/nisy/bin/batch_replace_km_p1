@@ -4,6 +4,14 @@ batch_extract_km
 
 K_STR="kernel_log_"
 M_STR="main_log_"
+K_LAST_STR="last_kmsg"
+M_LAST_STR="last_AndroidLog"
+K_IC_STR="kern.log"
+M_IC_STR="user.log"
+
+
+K_DF_STR="logcat_kernel"
+M_DF_STR="logcat.log"
 
 if [ ! -f $1 ]; then
 echo $1 "  not exist!"
@@ -14,17 +22,17 @@ RESULT=$(find)
 for FILE in $RESULT
 do
 
-if [[ $FILE == *$K_STR* ]]
+if [[ $FILE == *$K_STR* ]] || [[ $FILE == *$K_DF_STR* ]] || [[ $FILE == *$K_LAST_STR* ]] || [[ $FILE == *$K_IC_STR* ]];
 then
 echo $FILE
-sed -i -f $1 $FILE
+sed -i -E -r -f $1 $FILE
 echo -e "\n"
 fi
 
-if [[ $FILE == *$M_STR* ]]
+if [[ $FILE == *$M_STR* ]] || [[ $FILE == *$M_DF_STR* ]] || [[ $FILE == *$M_LAST_STR* ]] || [[ $FILE == *$M_IC_STR* ]];
 then
 echo $FILE
-sed -i -f $1 $FILE
+sed -i -E -r -f $1 $FILE
 echo -e "\n"
 fi
 

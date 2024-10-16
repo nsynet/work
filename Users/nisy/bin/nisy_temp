@@ -1,2 +1,2 @@
-s/df_display_log set desav backlight is disabled \= 1 1/df_display_log set desav backlight is disabled \= 1 1  #@!~   唤醒/g
-s/df_display_log\: mtk_drm_suspend_release_present_fence release fence failed/df_display_log\: mtk_drm_suspend_release_present_fence release fence failed   #@!~ 每次执行休眠时会进行打印，正常休眠完成仅打印一次/g
+s/small than grab window_w\:/& #@!~ /g
+s/small than grab window_v\:/& #@!~ /g

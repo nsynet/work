@@ -1,0 +1,5 @@
+#!/bin/bash
+batch_extract_k
+batch_replace_k_p1 ~/bin/d600_i2c8_~!@
+batch_replace_k_p1 ~/bin/d600_i2c2_@!~
+echo -e "\a"   # bell

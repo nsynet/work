@@ -1,0 +1,11 @@
+s/msm_sensor/~!@ &/g
+s/hwversion_setup/~!@pateo  &/g
+s/sensor info:/~!@ &/g
+s/ tw9992: read id failed/@@@ &/g
+s/ds90ub940: read id failed/@!~ &/g
+s/Open camera id/@!~ &/g
+s/msm_sensor_match_id/@!~ &/g
+s/msm_sensor_check_id/@!~ &/g
+s/msm_cci_i2c_read/@!~ &/g
+s/nisy/@!~ &/g
+

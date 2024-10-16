@@ -1,0 +1,4 @@
+#!/bin/bash
+batch_extract_m
+batch_replace_m_p1 ~/bin/d600_i2c8_~!@
+echo -e "\a" 
