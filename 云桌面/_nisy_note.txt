@@ -1,0 +1,216 @@
+修改打印：
+
+
+PK_DBG("line=%d:new state=0x%x,old state=0x%x,%d,%d\n",__LINE__,current_val,last_fill_val,i2c8_cam_init_state,g_cam_avm_lock_irq_state);
+
+FUNC_OMS_LOCK_ERRB_INTERRUPT   //后视摄像头随车带走，用户回去后实际装在挂车上,买车的时候给他们配好配件，客户回去后自己装,不排除客户回去后装其他摄像头
+
+
+ == 常用
+//si中只保留 /workspace/code5_m57/kernel-4.14/drivers/misc/mediatek/imgsensor/src/mt6873/camera_hw/imgsensor_cfg_table.c 
+去掉 Z:\workspace\code5_m57\kernel-4.14\drivers\misc\mediatek\imgsensor\src\common\v1_1\camera_hw\imgsensor_cfg_table.c
+user密码 nsynet88
+//bpfcc用法：
+sudo /usr/sbin/execsnoop-bpfcc --max-args 50 >~/nisy_build_m57_boot.log
+
+
+==G59
+
+//更新code：
+git fetch --all;git checkout G59_A2_20210126;git reset --hard base/G59_A2_20210126;
+repo forall -c 'pwd;git fetch --all;git checkout G59_A2_20210126;git reset --hard base/G59_A2_20210126'
+git fetch --all;git checkout G59_Market_on10250930_230303;git reset --hard origin/G59_Market_on10250930_230303;
+
+
+//顺便合入：
+
+        LOGD_INFO("max9286_mipi: 0x49 reg = 0x%02x.", reg);
+改成：
+        LOGD_INFO("max9286_mipi: 0x49 reg = 0x%02x(bit3=rear,bit2=right,bit1=left,bit0=front)", reg);        
+
+//drivers/media/v4l2-core/videobuf2-v4l2.c 的打印需要修改：
+                printk("df_dqbuf:%d:%c,%d,%d,%d,g_dqbuf_cnt=%d\n",vdev->name[8] , __LINE__,g_camera_id_0_dqbuf_slow,g_camera_id_1_dqbuf_slow,g_camera_id_2_dqbuf_slow,g_camera_id_3_dqbuf_slow,g_dqbuf_cnt);        
+
+
+git add -A
+git commit -m "                                                                                          
+RedmineID:NA
+Description:[G59市场]用户点火开关时影响摄像头出图，调整重试时间
+Bug or feature:bug
+Team:BSP
+"
+git push base  HEAD:refs/for/G59_A2_20210126
+
+//	编译
+1、source build/envsetup.sh
+2、指定板型，如G59：lunch 42
+
+编译镜像的命令：
+3、全编译命令：make -j8
+   编译boot.img : make bootimage -j8
+   编译dtbo.img : make dtboimage -j8
+
+   编译uboot:     make bootloader
+
+
+
+
+== d320
+
+
+//安卓更新code：
+repo forall -c 'pwd;git fetch --all;git checkout DFCV_V1.0_master;git reset --hard base/DFCV_V1.0_master'
+git reset --hard base/DFCV_V1.4.0_master_0920
+//上传代码
+git add -A
+git commit -m "                                                                                          
+RedmineID:NA
+Description:[D320]fix 宏开关DF_CAMERA_DETECT关闭后的上报
+Bug or feature:bug
+Team:BSP
+"
+git push base HEAD:refs/for/DFCV_V1.0_master   #上传提交，base注意替换成上一步的远程分支
+git push base HEAD:refs/for/DFCV_V1.4.0_master_0920
+git remote   #查看远程分支，以base为例
+
+== m57
+
+//更新code：
+主线分支：
+repo forall -c 'pwd;git fetch --all;git checkout m57_raite_mtk8675_0926;git reset --hard master/m57_raite_mtk8675_0926'
+
+
+市场分支：
+git fetch --all;git checkout m57_raite_market_1213;git reset --hard origin/m57_raite_market_1213
+
+git fetch --all;git checkout IVI2.0_MTK8675_A0_master;git reset --hard origin/IVI2.0_MTK8675_A0_master
+git fetch --all;git checkout IVI2.0_MTK8675_A0_master_5g;git reset --hard origin/IVI2.0_MTK8675_A0_master_5g
+git fetch --all;git checkout MTK_8675_RAITE_BRANCH;git reset --hard origin/MTK_8675_RAITE_BRANCH
+单系统：git fetch --all;git checkout m57_base_mtk8675_0909;git reset --hard master/m57_base_mtk8675_0909
+git fetch --all;git checkout DFTC_M57_RAITE_V01321_20221121_ON1201;git reset --hard origin/DFTC_M57_RAITE_V01321_20221121_ON1201
+git fetch --all;git checkout m57_yocto_8675_raite_branch;git reset --hard master/m57_yocto_8675_raite_branch
+
+
+repo forall -c 'pwd;git fetch --all;git checkout DFTC_M57_RAITE_20230619;git reset --hard master/m57_raite_mtk8675_0926'
+repo forall -c 'pwd;git fetch --all;git checkout m57_base_mtk8675_0909;git reset --hard master/m57_base_mtk8675_0909'
+repo forall -c 'pwd;git fetch --all;git checkout DFTC_M57_20230619;git reset --hard master/m57_yocto_8675_raite_branch'
+
+
+取某一天的版本：
+repo forall -c 'pwd;git fetch --all;git checkout MTK_8675_RAITE_BRANCH;git reset --hard master/MTK_8675_RAITE_BRANCH'
+
+
+//编译代码
+rm -rf out_vnd_8675/target/product/spm8675p1_64_raite/obj/KERNEL_OBJ/
+source build/envsetup.sh 
+export OUT_DIR=out_vnd_8675
+lunch vnd_spm8675p1_64_raite-userdebug
+make -j64 bootimage 
+make -j64 dtboimage 
+
+git add -A
+git commit -m "
+RedmineID:NA
+Description:[P20]增加更多寄存器的导出shell脚本
+Bug or feature:feature
+Team:BSP
+"
+
+git push master  HEAD:refs/for/m57_raite_mtk8675_0926
+git push master  HEAD:refs/for/m57_raite_market_1016
+git push master  HEAD:refs/for/MTK_8675_RAITE_BRANCH
+git push master  HEAD:refs/for/m57_yocto_8675_raite_branch
+
+
+//M57修改摄像头需要修改的仓库：
+倪升跃 安卓涉及3个仓:
+vendor/mediatek/proprietary/custom
+	|__ mt6873/hal/imgsensor_src/cfg_setting_imgsensor.cpp
+device/mediateksample/spm8675p1_64_raite
+    |__ ProjectConfig.mk
+kernel-4.14
+
+倪升跃 仪表yocto涉及1个仓:
+src/kernel/linux/v4.14_spm
+
+陈雪松 涉及到1个仓：0909
+packages/services/DfCar/avm
+
+
+
+//单系统编译：
+split build spm8675p1_64:
+build sys image的方法：
+source build/envsetup.sh && export OUT_DIR=out_sys  && lunch sys_mssi_spm_64_cn-userdebug && make -j24 sys_images 2>&1|tee sys.txt
+
+
+build vender kernel image的方法：
+source build/envsetup.sh && export OUT_DIR=out_vnd_8675 && lunch vnd_spm8675p1_64-userdebug && make -j24 vnd_images krn_images 2>&1 | tee vnd_kernel.txt
+source build/envsetup.sh && export OUT_DIR=out_vnd_8675 && lunch vnd_spm8675p1_64-userdebug && make -j24  krn_images 2>&1 | tee kernel.txt
+
+打包image  (请把下面的cmd 复制成一行)的方法：
+
+python ./out_sys/target/product/mssi_spm_64_cn/images/split_build.py --system-dir out_sys/target/product/mssi_spm_64_cn/images --vendor-dir out_vnd_8675/target/product/spm8675p1_64/images --kernel-dir out_vnd_8675/target/product/spm8675p1_64/images --output-dir output_load_spm8675
+
+
+== p20
+//更新code：
+repo forall -c 'pwd;git fetch --all;git checkout p20_raite_mtk8675_231020;git reset --hard master/p20_raite_mtk8675_231020'
+
+yocto:
+repo forall -c 'git fetch --all;git checkout p20_yocto_8675_raite_branch_1020;git reset --hard master/p20_yocto_8675_raite_branch_1020'
+
+
+git add -A
+git commit -m "
+RedmineID:135788
+Description:[P20]GPIO170/171/44 默认开机时拉低
+Bug or feature:feature
+Team:BSP
+"
+git push master  HEAD:refs/for/p20_raite_mtk8675_231020
+git push master  HEAD:refs/for/p20_yocto_8675_raite_branch_1020
+
+单系统：
+git fetch --all;git checkout m57_base_mtk8675_0909;git reset --hard master/m57_base_mtk8675_0909
+git push master  HEAD:refs/for/m57_base_mtk8675_0909
+
+
+
+
+
+==d600
+//更新code：
+repo forall -c 'pwd;git fetch --all;git checkout d600_raite_mtk8675_231030;git reset --hard master/d600_raite_mtk8675_231030'
+
+git add -A
+git commit -m "
+RedmineID:135785
+Description:[d600]fix：休眠时GPIO有异常拉高动作
+Bug or feature:feature
+Team:BSP
+"
+git push master  HEAD:refs/for/d600_raite_mtk8675_231030
+
+//yocto
+repo forall -c 'git fetch --all;git checkout D600_yocto_8675_raite_branch;git reset --hard master/D600_yocto_8675_raite_branch‘
+git push master  HEAD:refs/for/D600_yocto_8675_raite_branch
+
+
+===s32
+
+//更新code：
+repo forall -c 'pwd;git fetch --all;git checkout s31_slm925_qcm6125_240103;git reset --hard master/s31_slm925_qcm6125_240103'
+
+美格分支：
+repo forall -c 'git fetch --all;git checkout master;git reset --hard origin/master'
+
+git add -A
+git commit -m "
+RedmineID:133030
+Description:[S32]工程模式中增加按钮“硬测配置”，量产=FAPA，配置2=单倒车摄像头（仅FAPA pin），配置3/4=单倒车摄像头（FAPA/DMS pin均可）
+Bug or feature:feature
+Team:BSP
+"
+git push master HEAD:refs/for/s31_slm925_qcm6125_240103
+//master的代码就是美格的原始基线代码:repo forall -c "git checkout master"
